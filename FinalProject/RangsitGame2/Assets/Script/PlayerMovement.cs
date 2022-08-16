@@ -65,7 +65,6 @@ public class PlayerMovement : MonoBehaviour
         }else if(transform.position.x <= limitMinVector.x)
         {
             transform.position = new Vector3(limitMinVector.x, transform.position.y, transform.position.z);
-
         }
         moveDir.x = Input.GetAxisRaw("Horizontal");
         rb2D.velocity = new Vector2(moveDir.x * speedMoveX * Time.deltaTime, rb2D.velocity.y);

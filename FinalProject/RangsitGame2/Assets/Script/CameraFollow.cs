@@ -17,12 +17,15 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position != playerPos.position)
+        if(playerPos != null)
         {
-            Vector3 PlayerPos = new Vector3(playerPos.position.x, playerPos.position.y, transform.position.z);
-            PlayerPos.x = Mathf.Clamp(PlayerPos.x, minPos.x, maxPos.x);
-            PlayerPos.y = Mathf.Clamp(PlayerPos.y, minPos.y, maxPos.y);
-            transform.position = Vector3.Lerp(transform.position, PlayerPos, smoothing);
+            if (transform.position != playerPos.position)
+            {
+                Vector3 PlayerPos = new Vector3(playerPos.position.x, playerPos.position.y, transform.position.z);
+                PlayerPos.x = Mathf.Clamp(PlayerPos.x, minPos.x, maxPos.x);
+                PlayerPos.y = Mathf.Clamp(PlayerPos.y, minPos.y, maxPos.y);
+                transform.position = Vector3.Lerp(transform.position, PlayerPos, smoothing);
+            }
         }
     }
 }

@@ -9895,7 +9895,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 17
   m_Sprite: {fileID: 21300000, guid: 73b4304ed924c6742afd9b0cbec65749, type: 3}
   m_Color: {r: 0.9960785, g: 0.74509805, b: 0.9960785, a: 1}
   m_FlipX: 0
@@ -10015,6 +10015,7 @@ GameObject:
   - component: {fileID: 2674684816893473712}
   - component: {fileID: 2674684816893473715}
   - component: {fileID: 2674684816893473718}
+  - component: {fileID: 901543941}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -10079,7 +10080,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 16
   m_Sprite: {fileID: 21300000, guid: 6d5fd086304b0ed4a91be3efd1b0d67a, type: 3}
   m_Color: {r: 0.9960785, g: 0.7607844, b: 0.9960785, a: 1}
   m_FlipX: 0
@@ -10143,7 +10144,7 @@ MonoBehaviour:
   speedMoveX: 350
   jumpForce: 7
   feetPos: {fileID: 2674684815401528900}
-  checkRadius: 0.05
+  checkRadius: 0.1
   Ground:
     serializedVersion: 2
     m_Bits: 64
@@ -10169,6 +10170,20 @@ MonoBehaviour:
   EndLaser: {fileID: 2522264746341781290}
   startVFX: {fileID: 2522639225603647794}
   endVFX: {fileID: 4126156523667426339}
+--- !u!114 &901543941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2674684816893473724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75d15b179ea30e14e83e8071025cf927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 2674684816893473714}
+  spriteRendererGun: {fileID: 2674684815053502848}
 --- !u!1 &4126156523667426339
 GameObject:
   m_ObjectHideFlags: 0

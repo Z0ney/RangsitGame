@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Platform
+  - DamageToDie
   layers:
   - Default
   - TransparentFX
